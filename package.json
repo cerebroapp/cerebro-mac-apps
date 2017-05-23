@@ -39,6 +39,7 @@
     "chai": "^3.5.0",
     "css-loader": "^0.26.0",
     "mocha": "^3.3.0",
+    "proxyquire": "^1.8.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
@@ -46,7 +47,7 @@
   },
   "dependencies": {
     "react": "^15.4.1",
-    "cerebro-ui": "^0.0.14",
+    "cerebro-ui": "^0.0.15",
     "cerebro-tools": "^0.1.0",
     "du": "^0.1.0",
     "event-stream": "3.3.4"
