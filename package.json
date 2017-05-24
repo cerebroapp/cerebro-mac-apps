@@ -1,6 +1,6 @@
 {
   "name": "cerebro-mac-apps",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for searching and launching applications on MacOS",
   "license": "MIT",
   "repository": "KELiON/cerebro-mac-apps",
@@ -35,7 +35,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babili": "0.0.9",
+    "babili": "0.1.2",
     "chai": "^3.5.0",
     "css-loader": "^0.26.0",
     "mocha": "^3.3.0",
@@ -45,7 +45,6 @@
     "webpack": "2.5.1"
   },
   "dependencies": {
-    "react": "^15.4.1",
     "cerebro-ui": "^0.0.14",
     "cerebro-tools": "^0.1.0",
     "du": "^0.1.0",
