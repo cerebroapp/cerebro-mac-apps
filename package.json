@@ -1,6 +1,6 @@
 {
   "name": "cerebro-mac-apps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for searching and launching applications on MacOS",
   "license": "MIT",
   "repository": "KELiON/cerebro-mac-apps",
