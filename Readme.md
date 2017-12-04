@@ -1,5 +1,7 @@
 # cerebro-mac-apps
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KELiON/cerebro-mac-apps.svg)](https://greenkeeper.io/)
+
 > Plugin for searching and launching applications on MacOS [Cerebro app](http://www.cerebroapp.com)
 
 Note: this plugin on MacOS works better, than `cerebro-basic-apps`.
