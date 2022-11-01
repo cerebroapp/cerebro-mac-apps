@@ -44,7 +44,7 @@ const toString = (app) => (
   `${app.name} ${app.filename.replace(/\.app$/, '')} ${getAbbr(app.name)}`
 )
 
-export const fn = ({ term, actions, display }) => {
+const plugin = ({ term, actions, display }) => {
   cachedAppsList().then(items => {
     const result = orderBy(
       search(items, term, toString),
@@ -77,7 +77,7 @@ export const fn = ({ term, actions, display }) => {
   })
 }
 
-export const initialize = () => {
+const initialize = () => {
   // Cache apps cache and force cache reloading in background
   const recache = () => {
     cachedAppsList.clear()
@@ -91,4 +91,9 @@ export const initialize = () => {
   WATCH_DIRECTORIES.forEach(dir => {
     fs.watch(dir, WATCH_OPTIONS, recache)
   })
+}
+
+export default {
+  initialize,
+  fn: plugin
 }
