@@ -1,5 +1,4 @@
-import React, { PropTypes } from 'react'
-import { FileIcon } from 'cerebro-ui'
+import { FileIcon } from '@cerebroapp/cerebro-ui'
 import FileDetails from './FileDetails'
 import styles from './styles.css'
 
@@ -12,10 +11,5 @@ const Preview = ({ path, name }) => (
     <FileDetails path={path} key={path} skipName />
   </div>
 )
-
-Preview.propTypes = {
-  path: PropTypes.string,
-  name: PropTypes.string,
-}
 
 export default Preview

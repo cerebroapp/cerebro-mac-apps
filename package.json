@@ -1,9 +1,13 @@
 {
   "name": "cerebro-mac-apps",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin for searching and launching applications on MacOS",
   "license": "MIT",
-  "repository": "KELiON/cerebro-mac-apps",
+  "homepage": "https://github.com/cerebroapp/cerebro-mac-apps#readme",
+  "bugs": {
+    "url": "https://github.com/cerebroapp/cerebro-mac-apps/issues"
+  },
+  "repository": "github:cerebroapp/cerebro-mac-apps",
   "author": {
     "name": "Alexandr Subbotin",
     "email": "kelionweb@gmail.com",
@@ -13,11 +17,9 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "webpack && babili dist -d dist --compact --no-comments",
-    "debug": "./scripts/debug",
-    "debug:windows": "scripts\\debug.bat",
-    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "rimraf ./dist && npm run build"
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test"
   },
   "main": "dist/index.js",
   "keywords": [
@@ -27,27 +29,12 @@
     "applications"
   ],
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-loader": "^6.2.8",
-    "babel-node-modules": "0.0.1",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-es2015-classes": "^6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babili": "0.1.2",
-    "chai": "^3.5.0",
-    "css-loader": "^0.26.0",
-    "mocha": "^3.3.0",
-    "rimraf": "^2.6.1",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "2.5.1"
+    "@cerebroapp/cerebro-scripts": "^1.0.0-alpha.6"
   },
   "dependencies": {
-    "cerebro-ui": "^0.0.14",
-    "cerebro-tools": "^0.1.0",
-    "du": "^0.1.0",
+    "@cerebroapp/cerebro-ui": "^2.0.0-alpha.3",
+    "cerebro-tools": "^0.1.8",
+    "du": "^1.0.0",
     "event-stream": "3.3.4"
   }
 }

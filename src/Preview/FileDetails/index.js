@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
 import bytesToSize from './bytesToSize'
 import getFileSize from './getFileSize'
@@ -24,6 +24,7 @@ class FileDetails extends Component {
     const { details, size } = this.state
     const { ctime, mtime, atime } = details
     const name = nodePath.basename(path)
+
     return (
       <div className={styles.fileDetails}>
         {!skipName && <h3 className={styles.fileName}>{name}</h3>}
@@ -40,12 +41,6 @@ class FileDetails extends Component {
       </div>
     )
   }
-}
-
-FileDetails.propTypes = {
-  path: PropTypes.string.isRequired,
-  skipName: PropTypes.bool,
-  skipSize: PropTypes.bool,
 }
 
 export default FileDetails
