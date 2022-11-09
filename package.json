@@ -1,6 +1,6 @@
 {
-  "name": "cerebro-mac-apps",
-  "version": "1.0.3",
+  "name": "@cerebroapp/cerebro-mac-apps",
+  "version": "1.0.0",
   "description": "Plugin for searching and launching applications on MacOS",
   "license": "MIT",
   "homepage": "https://github.com/cerebroapp/cerebro-mac-apps#readme",
@@ -14,7 +14,7 @@
     "url": "asubbotin.ru"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=16"
   },
   "scripts": {
     "start": "cerebro-scripts start",

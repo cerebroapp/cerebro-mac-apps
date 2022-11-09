@@ -1,12 +1,13 @@
 # cerebro-mac-apps
 
-> Plugin for searching and launching applications on MacOS [Cerebro app](http://www.cerebroapp.com)
+> Plugin for searching and launching applications on MacOS [Cerebro app](http://cerebroapp.vercel.app)
 
 Note: this plugin on MacOS works better, than `cerebro-basic-apps`.
 
-![](screenshot.png)
+![plugin image](screenshot.png)
 
 ## Usage
+
 Search for any application on your machine.
 
 ## Features
@@ -17,8 +18,8 @@ Search for any application on your machine.
 
 ## Related
 
-* [Cerebro](http://github.com/KELiON/cerebro) – main repo for Cerebro app;
-* [cerebro tools](http://github.com/KELiON/cerebro-tools) – package with tools to simplify package creation;
+* [Cerebro](http://github.com/cerebroapp/cerebro) – main repo for Cerebro app;
+* [cerebro tools](http://github.com/cerebroapp/cerebro-tools) – package with tools to simplify package creation;
 
 ## License
 
