@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src",
+  ],
+  "compilerOptions": {
+    "target": "ES2021",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "strict": true,
+    "noImplicitAny": false,
+    "jsx": "react-jsx"
+  }
+}

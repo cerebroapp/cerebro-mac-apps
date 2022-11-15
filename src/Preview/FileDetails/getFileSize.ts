@@ -3,13 +3,11 @@ import { memoize } from 'cerebro-tools'
 
 /**
  * Get size of file
- * @param  {String} path
- * @return {Promise<Integer>}
  */
-const getFileSize = (path) => (
+const getFileSize = async (path: string) => (
   new Promise((resolve, reject) => {
     du(path, (err, size) => (
-      err ? reject(err) : resolve(size)
+      (err != null) ? reject(err) : resolve(size)
     ))
   })
 )
