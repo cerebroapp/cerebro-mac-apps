@@ -1,15 +1,6 @@
-import fs from 'node:fs'
-import { memoize } from 'cerebro-tools'
+import fs from 'node:fs/promises'
+import memoize from 'memoizee'
 
-/**
- * Promise-wrapper for fs.stat
- */
-const getFileDetails = async (path) => (
-  new Promise((resolve, reject) => {
-    fs.stat(path, (err, stat) => (
-      (err != null) ? reject(err) : resolve(stat)
-    ))
-  })
-)
+const getFileDetails = async (path) => fs.stat(path)
 
 export default memoize(getFileDetails)

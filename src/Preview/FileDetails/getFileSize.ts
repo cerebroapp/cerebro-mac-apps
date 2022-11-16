@@ -1,15 +1,6 @@
 import du from 'du'
-import { memoize } from 'cerebro-tools'
+import memoize from 'memoizee'
 
-/**
- * Get size of file
- */
-const getFileSize = async (path: string) => (
-  new Promise((resolve, reject) => {
-    du(path, (err, size) => (
-      (err != null) ? reject(err) : resolve(size)
-    ))
-  })
-)
+const getFileSize = async (path: string) => du(path)
 
 export default memoize(getFileSize)

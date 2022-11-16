@@ -17,10 +17,10 @@ const FileDetails = ({ skipName = false, skipSize = false, path }: Props) => {
 
   React.useEffect(() => {
     async function fetchFileDetails () {
-      const size = await getFileSize(path) as number
+      const size = await getFileSize(path)
       setSize(size)
 
-      const details = await getFileDetails(path) as Stats
+      const details = await getFileDetails(path)
       setDetails(details)
     }
     fetchFileDetails()

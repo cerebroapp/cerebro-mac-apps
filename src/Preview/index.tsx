@@ -1,7 +1,7 @@
 import { FileIcon } from '@cerebroapp/cerebro-ui'
 import FileDetails from './FileDetails'
-import styles from './styles.css'
-import { App } from '../lib/getAppsListSearcher'
+import styles from './styles.module.css'
+import type { App } from '../lib/getAppsListSearcher'
 
 const Preview = ({ path, name }: App) => (
   <div>

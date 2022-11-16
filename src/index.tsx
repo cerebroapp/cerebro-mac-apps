@@ -1,9 +1,9 @@
 import Preview from './Preview'
-import { memoize } from 'cerebro-tools'
+import memoize from 'memoizee'
 import getAppsListSearcher, { App } from './lib/getAppsListSearcher'
 import fs from 'node:fs'
 import type { Fzf } from 'fzf'
-import { KeyboardEvent } from 'react'
+import type { KeyboardEvent } from 'react'
 
 /**
  * Directories to watch.
@@ -28,8 +28,7 @@ const WATCH_OPTIONS: fs.WatchOptions = {
 const CACHE_TIME = 30 * 60 * 1000
 
 /**
- * Cache getAppsList function
- * @type {Function}
+ * Memoized getAppsList function
  */
 const cachedAppsListSearcher = memoize(getAppsListSearcher, {
   length: false,
@@ -42,7 +41,7 @@ const plugin = ({ term, actions, display }) => {
   if (term.toLowerCase() === 'refresh') {
     display({
       title: 'Refresh Mac Apps Cache',
-      onSelect: () => cachedAppsListSearcher.clear()
+      onSelect: async () => cachedAppsListSearcher.clear()
     })
 
     return
