@@ -1,9 +1,3 @@
-:global {
-  .gm-style {
-    filter: var(--preview-filter);
-  }
-}
-
 .previewIcon {
   text-align: center;
 }
