@@ -1,6 +1,6 @@
 {
   "name": "@cerebroapp/cerebro-mac-apps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plugin for searching and launching applications on MacOS",
   "license": "MIT",
   "homepage": "https://github.com/cerebroapp/cerebro-mac-apps#readme",
@@ -16,25 +16,48 @@
   "engines": {
     "node": ">=16"
   },
+  "os": [
+    "darwin",
+    "osx"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "cerebro-scripts start",
-    "build": "cerebro-scripts build",
-    "test": "cerebro-scripts test"
+    "start": "cerebro-build start",
+    "build": "cerebro-build build",
+    "test": "cerebro-build test"
   },
   "main": "dist/index.js",
   "keywords": [
     "cerebro",
+    "cerebro-plugin",
     "cerebro-extracted-plugin",
     "apps",
     "applications"
   ],
   "devDependencies": {
-    "@cerebroapp/cerebro-scripts": "^1.0.0-alpha.6"
+    "@types/du": "^1.0.1",
+    "@types/memoizee": "^0.4.8",
+    "@types/node": "^18.11.9",
+    "@types/react": "16.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "cerebro-build": "^1.2.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
+    "typescript": "*"
   },
   "dependencies": {
     "@cerebroapp/cerebro-ui": "^2.0.0-alpha.3",
-    "cerebro-tools": "^0.1.8",
     "du": "^1.0.0",
-    "event-stream": "3.3.4"
+    "fzf": "^0.5.1",
+    "memoizee": "^0.4.15"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

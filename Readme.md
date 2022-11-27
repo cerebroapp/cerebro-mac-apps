@@ -9,6 +9,7 @@ Note: this plugin on MacOS works better, than `cerebro-basic-apps`.
 ## Usage
 
 Search for any application on your machine.
+Use `refresh` command to update the list of applications.
 
 ## Features
 
